@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web", sans-serif;
+}
+
+/*organizar o arquivo e criar um root*/
+/*Criar variveis de cor*/
+
+a {
+    color: #000;
+}
+
+header {
+    margin: 0 10rem;
+}
+
+
+.header {
+    color: white; 
+    display: flex;
+    align-items: center; 
+}
+
+
+.header_info {
+    background-color: #1B4159;
+    transform: skewX(-10deg); 
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+}
+
+.header_content {
+    display: flex;
+    justify-content:space-evenly; 
+    flex-direction: row;
+    align-items: center;
+    color: #fefefe;
+
+}
+
+.header_content span p {
+    margin: 0;
+    font-size: 1rem; 
+    transform: skewX(10deg); 
+}
+
+.contact {
+    background-color: #39759B;
+    width: 17rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.header_pesquisa {
+    display: flex;
+    justify-content: space-between; 
+    padding: 1rem 0;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 0 0 1.25rem 0;
+}
+
+.header_pesquisa form input {
+    width: 20vw;
+    border: 1px solid #CCD4D9;
+    border-radius: 5px 0 0 5px;
+    padding: .35rem;
+}
+
+.header_pesquisa form button {
+    border: 1px solid #CCD4D9;
+    padding: 0 .5rem;
+    background-color: #fefefe;
+    border-radius: 0 5px 5px 0;
+    margin-left: -0.25rem;
+    padding: .35rem;
+    cursor: pointer;
+}
+
+.header_pesquisa form button:hover {
+    background-color: #00C345;
+    color: #fefefe;
+    border: 1px solid #00C345;
+}
+
+.info {
+    padding: 1rem;
+}
+
+
+.header_logo {
+  padding: 1.5rem 0;
+
+}
+
+
+.logo img {
+    height: 10rem;
+}
+
+.menu {
+    padding: 1rem 0 0 0;
+}
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 1rem; 
+    margin: 0 .5rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: .15rem solid #fff;
+    
+}
+
+.menu ul li a:hover {
+    border-bottom: .15rem solid #F2B705;
+    transition: 0.3s;
+    color: #F2B705;
+}
+
+.nav-item.active {
+    color: #000;
+    color: #F2B705;
+}
+
+.carrocel_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    position: relative;
+    width: 82%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%; 
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex: 1 0 100%; 
+}
+
+.prev, .next {
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+
+.prev {
+    left: -2rem;
+    margin-left: 5rem;
+}
+
+.next {
+    right: -2rem;
+    margin-right: 5rem;
+}
+
+.prev:hover, .next:hover {
+   color: #1B4159;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.dot {
+    height: 0.6rem;
+    width: 0.6rem;
+    margin: 0 5px;
+    border: 1px solid #1B4159;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #1B4159;
+}
+
+.sobre {
+    background-color: #d9d9d92a;
+    width: 100%;
+    margin: 10rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre_item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 5rem;
+    width: 100%;
+}
+
+
+.sobre_item article, .sobre_item figure {
+    width: 100%;
+    padding: 1rem;
+}
+
+.sobre_item figure {
+    margin-top: -5rem;
+}
+
+
+.sobre_item article h3{
+    margin: 2rem 0 .5rem 0;
+    font-size: 24px;
+}
+
+.sobre_item article p {
+    margin-bottom: 3rem;
+    font-size: 16px;
+}
+
+.sobre_item article .orna {
+    width: 8rem;
+    height: .20rem;
+    background-color: #F2B705;
+    margin-bottom: 1rem;
+}
+
+.sobre_item article h6 {
+    text-align: right;
+}
+
+footer {
+    background-color: #102E40;
+    padding: 3rem 5rem;
+}
